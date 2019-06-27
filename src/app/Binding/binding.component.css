@@ -1,0 +1,15 @@
+.imageclass{
+    height:300px;
+    width: 300px;
+}
+th{
+    border: 2px solid black;
+}
+td{
+    border: 2px solid black;
+}
+
+table
+{
+    border-collapse: collapse;
+}

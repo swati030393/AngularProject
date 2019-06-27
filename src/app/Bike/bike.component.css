@@ -1,0 +1,17 @@
+td{
+    border: 2px solid red;
+}
+
+th{
+    border: 2px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+.colorclass{
+    background-color: yellow;
+
+}
+.obliqueclass{
+    font-style: oblique
+}

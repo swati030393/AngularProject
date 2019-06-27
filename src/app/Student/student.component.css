@@ -1,0 +1,31 @@
+th{
+    border: 2px solid red
+}
+td{
+    border: 2px solid black
+}
+
+table{
+    border-collapse: collapse;
+   
+}
+
+.customclass
+{
+    color: red;
+    background-color: yellow;
+    font-size: 125%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.italicclass{
+    font-style: italic;
+}
+
+.boldclass{
+    font-weight: bold;
+}
+.colorclass{
+    color: red;
+}

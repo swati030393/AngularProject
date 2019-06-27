@@ -1,0 +1,48 @@
+
+<p>Employee Works</p>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>CITY</th>
+        <th>GENDER</th>
+        <th>SALARY </th>
+        <th>DATE OF JOINING</th>
+        
+    </tr>
+    <tr *ngFor= "let emp of employee">
+        <td>{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.city}}</td>
+        <td>{{emp.gender}}</td>
+        <td>{{emp.salary}}</td>
+        <td>{{emp.doj}}</td>
+    </tr>
+</table>
+<h1>All={{getCountAllEmployee()}}</h1>
+<h2>Male={{ getCountofAllMale()}}</h2>
+<h3>Female={{getCountofAllFemale()}}</h3>
+<img *ngIf="show" src="https://angular.io/assets/images/logos/angular/angular.svg" class="imageclass" alt="AngularLogo">
+<img *ngIf="show"  src="{{imagePath}}" class="imageclass" alt="AngularLogo">
+<br>
+<img *ngIf="show" [src]="imagePath" alt="xyz" class="imageclass">
+<br>
+<button (click)="HideShowImage()">{{show ? 'Hide':'show'}} images</button>
+
+<!-----  <button disabled="{{isDisable}}">Interpollation</button>
+<button [disable]="isDisable">Propertybinding</button>
+<button (click)="butonclicked()">My button</button>
+<br>-->
+<h2>
+    Your value:{{name}}
+</h2>
+name:<input type="text" [value]="name">
+
+<br>
+<h2>Your Value:{{name1}}</h2>
+name:<input type="text" [value]="name1" (input)="name1=$event.target.value">;
+<br>
+<h2>
+    Your Value:{{name2}}
+</h2>
+name:<input type="text" [ngModel]="name2">
